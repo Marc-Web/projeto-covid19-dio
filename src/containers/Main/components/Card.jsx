@@ -1,16 +1,17 @@
 import React, { memo } from 'react';
-import PropTypes from 'prop-types';
-import { Card as CardUI } from '../components';
-import { LabelStyled, ValueStyled, CardContentStyled } from './style';
+// import PropTypes from 'prop-types';
+import { Card as CardUI } from '../../../components';
+import { LabelStyled, ValueStyled } from '../../Main/components/style';
+import { CardContentStyled } from './style';
 
 function Card({ value, label, color }) {
   return (
-    <Card>
+    <CardUI>
       <CardContentStyled color={color}>
         <ValueStyled>{value}</ValueStyled>
         <LabelStyled>{label}</LabelStyled>
       </CardContentStyled>
-    </Card>
+    </CardUI>
   )
 };
 

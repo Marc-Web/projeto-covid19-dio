@@ -4,3 +4,4 @@
 - [x] Instalando dependências, inserindo imagens e configurando estilo global com styled-components.
 - [x] Criando a página que renderiza as informações, e a API que retorna informações sobre covid no país que o usuário escolher.
 - [x] Criando os components e os cards.
+- [x] Renderizando os cards na tela e os estilizando.
