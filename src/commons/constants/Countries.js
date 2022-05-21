@@ -1,9 +1,9 @@
-import BrazilFlag from "../../assets/images/bandeira-brasil.png";
-import ChinaFlag from "../../assets/images/bandeira-china.png";
-import GermanyFlag from "../../assets/images/bandeira-alemanha.png";
-import ItalyFlag from "../../assets/images/bandeira-italia.png";
-import UsaFlag from "../../assets/images/bandeira-usa.png";
-import PortugalFlag from "../../assets/images/bandeira-portugal.png";
+import BrazilFlag from "../../assets/images/icons8-brazil-48.png";
+import ChinaFlag from "../../assets/images/icons8-china-48.png";
+import GermanyFlag from "../../assets/images/icons8-germany-48.png";
+import ItalyFlag from "../../assets/images/icons8-italy-48.png";
+import UsaFlag from "../../assets/images/icons8-usa-48.png";
+import PortugalFlag from "../../assets/images/icons8-portugal-48.png";
 
 const COUNTRIES = [
   {
