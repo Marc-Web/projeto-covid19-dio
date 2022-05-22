@@ -18,19 +18,50 @@ function Panel({ updateAt, onChange, data, country, getCovidData }) {
     </MenuItem>
   )
 
+  const textCovid19 = `País: ${country} - Recuperados: ${recovered}`;
+
+  const shareInfo = () => {
+    navigator.share({
+      title: `Dados do Covid19 - ${country}`,
+      text: textCovid19,
+      url: "https://covid19dio.netlify.app/"
+    })
+  }
+
+  const copyInfo = () => {
+    navigator.clipboard.writeText(textCovid19);
+  }
+
+  const renderShareButton = (
+    <div>
+      <Button variant="contained" color="primary" onClick={shareInfo}>
+        Compartilhar
+      </Button>
+    </div>
+  )
+
+  const renderCopyButton = (
+    <div>
+      <Button variant="contained" color="primary" onClick={copyInfo}>
+        Copiar
+      </Button>
+    </div>
+  )
+
   return (
     <Card>
       <CardPanelStyled>
         <div>
-          <Typography variant="h5" component="span" color="primary">COVID19</Typography>
-          <Typography variant="h6" component="span" color="primary">Painel Coronavírus</Typography>
-          <Typography variant="body2" component="span" color="primary">Atualizado em : {updateAt}</Typography>
+          <Typography variant="h5" component="span" color="primary">COVID19</Typography><br />
+          <Typography variant="h6" component="span" color="primary">Painel Coronavírus</Typography><br />
+          <Typography variant="body2" component="span" color="primary">Atualizado em : {updateAt}</Typography><br />
           <div className="pt-2">
             <Select onChange={onChange} value={country}>
               {COUNTRIES.map(renderCountries)}
             </Select>
           </div>
         </div>
+        {navigatorHasShare ? renderShareButton : renderCopyButton}
       </CardPanelStyled>
     </Card>
   )
