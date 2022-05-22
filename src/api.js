@@ -12,4 +12,8 @@ function getCountry(country) {
   );
 }
 
-export default getCountry;
+const exportedObject = {
+  getCountry,
+};
+
+export default exportedObject;
