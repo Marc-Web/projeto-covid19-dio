@@ -7,4 +7,4 @@
 - [x] Renderizando os cards na tela e os estilizando.
 - [x] Criando o painel com um select, para seleção de países.
 - [x] Substituindo imagens do select por icones. Fonte dos ícones: ('https://icons8.com.br/icons/set/pa%C3%ADs').
-- [x] Ativando e testando a aplicação em PWA(Progressive Web Aplication).
+- [x] Ativando e testando, com Lighthouse no Google Chrome, a aplicação em PWA(Progressive Web Aplication).
