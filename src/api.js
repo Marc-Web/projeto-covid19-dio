@@ -12,6 +12,4 @@ function getCountry(country) {
   );
 }
 
-export default {
-  getCountry,
-};
+export default getCountry;
