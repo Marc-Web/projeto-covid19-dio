@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import RefreashIcon from '../../../assets/images/refresh.png';
+// import RefreashIcon from '../../../assets/images/refresh.png';
 import { Card, Typography, Button, Select, MenuItem } from '../../../components';
 import COUNTRIES from '../../../commons/constants/Countries';
 import { CardPanelStyled, ItemStyled } from './style';
@@ -18,7 +18,14 @@ function Panel({ updateAt, onChange, data, country, getCovidData }) {
     </MenuItem>
   )
 
-  const textCovid19 = `País: ${country} - Recuperados: ${recovered}`;
+  const textCovid19 = `
+  País: ${country} -
+  Número de casos: ${cases} -
+  Número de mortes: ${deaths} -
+  Número de casos hoje: ${todayCases} -
+  Óbitos hoje: ${todayDeaths} -
+  Recuperados: ${recovered}
+  `;
 
   const shareInfo = () => {
     navigator.share({
